@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Valley School</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="top-header">
+    <div class="container header-row">
+      <div class="school-brand">
+        <h2>Green Valley School</h2>
+        <p>Learn Today, Lead Tomorrow</p>
+      </div>
+
+      <div class="header-buttons">
+        <button class="student-login-btn" onclick="openModal('studentModal')">Student Login</button>
+        <button class="staff-login-btn" onclick="openModal('staffModal')">Staff Login</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-row">
+      <div class="logo">GVS</div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#campus">Campus</a></li>
+        <li><a href="#admission">Admission</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <span class="hero-tag">Welcome to Green Valley School</span>
+        <h1>Building Bright Futures With Quality Education</h1>
+        <p>
+          We provide a modern learning environment where students grow in academics,
+          creativity, discipline, and leadership. Our school focuses on knowledge,
+          values, and real-world preparation.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#admission" class="hero-btn primary-btn">Apply Now</a>
+          <a href="#programs" class="hero-btn secondary-btn">Explore Programs</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <h3>Why Parents Choose Us</h3>
+          <ul>
+            <li>Experienced teaching staff</li>
+            <li>Digital and smart classrooms</li>
+            <li>Safe and supportive campus</li>
+            <li>Sports and creative activities</li>
+            <li>Strong student development focus</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="highlights-section">
+    <div class="container highlights-grid">
+      <div class="highlight-box">
+        <h3>1500+</h3>
+        <p>Students</p>
+      </div>
+      <div class="highlight-box">
+        <h3>90+</h3>
+        <p>Qualified Teachers</p>
+      </div>
+      <div class="highlight-box">
+        <h3>25+</h3>
+        <p>Modern Classrooms</p>
+      </div>
+      <div class="highlight-box">
+        <h3>100%</h3>
+        <p>Student Support</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section class="programs-section" id="programs">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Our Academic Programs</h2>
+        <p>Helping students learn with confidence and grow with skills.</p>
+      </div>
+
+      <div class="programs-grid">
+        <div class="program-card">
+          <div class="program-icon">📘</div>
+          <h3>Primary Education</h3>
+          <p>
+            Strong basic learning with focus on communication, numbers, creativity,
+            and classroom confidence.
+          </p>
+        </div>
+
+        <div class="program-card">
+          <div class="program-icon">🧪</div>
+          <h3>Secondary Education</h3>
+          <p>
+            A balanced curriculum with practical learning in science, mathematics,
+            language, and social studies.
+          </p>
+        </div>
+
+        <div class="program-card">
+          <div class="program-icon">💻</div>
+          <h3>Technology Learning</h3>
+          <p>
+            Computer learning and digital exposure to prepare students for a modern future.
+          </p>
+        </div>
+
+        <div class="program-card">
+          <div class="program-icon">🎨</div>
+          <h3>Arts & Creativity</h3>
+          <p>
+            Music, drawing, dance, and cultural programs to improve confidence and expression.
+          </p>
+        </div>
+
+        <div class="program-card">
+          <div class="program-icon">⚽</div>
+          <h3>Sports & Fitness</h3>
+          <p>
+            Physical training and team activities for health, discipline, and leadership.
+          </p>
+        </div>
+
+        <div class="program-card">
+          <div class="program-icon">🌱</div>
+          <h3>Value Education</h3>
+          <p>
+            We focus on ethics, discipline, respect, and responsibility in student life.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus -->
+  <section class="campus-section" id="campus">
+    <div class="container campus-grid">
+      <div class="campus-image-box">
+        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80" alt="School Campus">
+      </div>
+
+      <div class="campus-content">
+        <div class="section-heading left-align">
+          <h2>Modern Campus Experience</h2>
+          <p>A place where learning feels inspiring, safe, and engaging.</p>
+        </div>
+
+        <div class="campus-features">
+          <div class="campus-feature">
+            <h4>Smart Classrooms</h4>
+            <p>Interactive teaching methods with digital support and comfortable learning spaces.</p>
+          </div>
+
+          <div class="campus-feature">
+            <h4>Science & Computer Labs</h4>
+            <p>Practical learning facilities for science, experiments, and technology exposure.</p>
+          </div>
+
+          <div class="campus-feature">
+            <h4>Library & Activity Rooms</h4>
+            <p>Reading, project learning, and creative spaces for every student’s growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission -->
+  <section class="admission-section" id="admission">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Admission Open</h2>
+        <p>Start your child’s journey with a trusted and future-ready school.</p>
+      </div>
+
+      <div class="admission-box">
+        <div class="admission-text">
+          <h3>Enroll For The New Academic Year</h3>
+          <p>
+            Admissions are now open for students from primary to higher classes.
+            Join a school that supports learning, growth, discipline, and success.
+          </p>
+        </div>
+
+        <div class="admission-action">
+          <a href="#contact" class="hero-btn primary-btn">Contact Admission Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Contact Us</h2>
+        <p>We are here to help parents and students with any questions.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3>School Information</h3>
+          <p><strong>School Name:</strong> Green Valley School</p>
+          <p><strong>Address:</strong> Solapur, Maharashtra, India</p>
+          <p><strong>Phone:</strong> +91 88765 43210</p>
+          <p><strong>Email:</strong> info@greenvalleyschool.com</p>
+          <p><strong>Timings:</strong> Monday to Saturday, 8:00 AM to 4:00 PM</p>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>Send Inquiry</h3>
+          <form>
+            <input type="text" placeholder="Your Full Name" />
+            <input type="email" placeholder="Your Email Address" />
+            <input type="text" placeholder="Subject" />
+            <textarea placeholder="Write your message"></textarea>
+            <button type="button" onclick="sendMessage()">Submit Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container footer-row">
+      <div>
+        <h3>Green Valley School</h3>
+        <p>Creating confident learners and responsible future leaders.</p>
+      </div>
+
+      <div>
+        <p>© 2026 Green Valley School. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Student Modal -->
+  <div class="modal-overlay" id="studentModal">
+    <div class="modal-box">
+      <span class="close-modal" onclick="closeModal('studentModal')">&times;</span>
+      <h2>Student Login</h2>
+      <form>
+        <input type="text" placeholder="Enter Student ID" />
+        <input type="password" placeholder="Enter Password" />
+        <button type="button" class="student-submit-btn" onclick="studentLogin()">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Staff Modal -->
+  <div class="modal-overlay" id="staffModal">
+    <div class="modal-box">
+      <span class="close-modal" onclick="closeModal('staffModal')">&times;</span>
+      <h2>Staff Login</h2>
+      <form>
+        <input type="text" placeholder="Enter Staff Email or ID" />
+        <input type="password" placeholder="Enter Password" />
+        <button type="button" class="staff-submit-btn" onclick="staffLogin()">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
