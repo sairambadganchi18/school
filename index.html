@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Valley School</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======================== HEADER ======================== -->
+  <header class="top-header">
+    <div class="container header-row">
+      <div class="school-brand">
+
+        <!-- SVG Logo -->
+        <svg class="school-logo" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="28" cy="28" r="28" fill="rgba(255,255,255,0.12)"/>
+          <rect x="10" y="20" width="36" height="22" rx="3" fill="#fbbf24"/>
+          <rect x="26" y="20" width="4" height="22" fill="#f59e0b"/>
+          <line x1="14" y1="26" x2="24" y2="26" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="14" y1="30" x2="24" y2="30" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="14" y1="34" x2="24" y2="34" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="32" y1="26" x2="42" y2="26" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="32" y1="30" x2="42" y2="30" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="32" y1="34" x2="42" y2="34" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+          <polygon points="28,8 40,14 28,20 16,14" fill="#ffffff"/>
+          <rect x="36" y="14" width="2" height="6" fill="#ffffff"/>
+          <circle cx="37" cy="21" r="2" fill="#fbbf24"/>
+        </svg>
+
+        <div class="school-brand-text">
+          <h2>Green Valley School</h2>
+          <p>Learn Today, Lead Tomorrow</p>
+        </div>
+      </div>
+
+      <div class="header-buttons">
+        <button class="student-login-btn" onclick="openModal('studentModal')">Student Login</button>
+        <button class="staff-login-btn" onclick="openModal('staffModal')">Staff Login</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar">
+    <div class="container nav-row">
+      <div class="logo">GVS</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#campus">Campus</a></li>
+        <li><a href="#admission">Admission</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <span class="hero-tag">Welcome to Green Valley School</span>
+        <h1>Building Bright Futures With Quality Education</h1>
+        <p>
+          We provide a modern learning environment where students grow in academics,
+          creativity, discipline, and leadership. Our school focuses on knowledge,
+          values, and real-world preparation.
+        </p>
+        <div class="hero-actions">
+          <a href="#admission" class="hero-btn primary-btn">Apply Now</a>
+          <a href="#programs" class="hero-btn secondary-btn">Explore Programs</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <h3>Why Parents Choose Us</h3>
+          <ul>
+            <li>Experienced teaching staff</li>
+            <li>Digital and smart classrooms</li>
+            <li>Safe and supportive campus</li>
+            <li>Sports and creative activities</li>
+            <li>Strong student development focus</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== HIGHLIGHTS ======================== -->
+  <section class="highlights-section">
+    <div class="container highlights-grid">
+      <div class="highlight-box"><h3>1500+</h3><p>Students</p></div>
+      <div class="highlight-box"><h3>90+</h3><p>Qualified Teachers</p></div>
+      <div class="highlight-box"><h3>25+</h3><p>Modern Classrooms</p></div>
+      <div class="highlight-box"><h3>100%</h3><p>Student Support</p></div>
+    </div>
+  </section>
+
+  <!-- ======================== PROGRAMS ======================== -->
+  <section class="programs-section" id="programs">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Our Academic Programs</h2>
+        <p>Helping students learn with confidence and grow with skills.</p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card">
+          <div class="program-icon">📘</div>
+          <h3>Primary Education</h3>
+          <p>Strong basic learning with focus on communication, numbers, creativity, and classroom confidence.</p>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">🧪</div>
+          <h3>Secondary Education</h3>
+          <p>A balanced curriculum with practical learning in science, mathematics, language, and social studies.</p>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">💻</div>
+          <h3>Technology Learning</h3>
+          <p>Computer learning and digital exposure to prepare students for a modern future.</p>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">🎨</div>
+          <h3>Arts &amp; Creativity</h3>
+          <p>Music, drawing, dance, and cultural programs to improve confidence and expression.</p>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">⚽</div>
+          <h3>Sports &amp; Fitness</h3>
+          <p>Physical training and team activities for health, discipline, and leadership.</p>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">🌱</div>
+          <h3>Value Education</h3>
+          <p>We focus on ethics, discipline, respect, and responsibility in student life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CAMPUS ======================== -->
+  <section class="campus-section" id="campus">
+    <div class="container campus-grid">
+      <div class="campus-image-box">
+        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80" alt="School Campus">
+      </div>
+      <div class="campus-content">
+        <div class="section-heading left-align">
+          <h2>Modern Campus Experience</h2>
+          <p>A place where learning feels inspiring, safe, and engaging.</p>
+        </div>
+        <div class="campus-features">
+          <div class="campus-feature">
+            <h4>Smart Classrooms</h4>
+            <p>Interactive teaching methods with digital support and comfortable learning spaces.</p>
+          </div>
+          <div class="campus-feature">
+            <h4>Science &amp; Computer Labs</h4>
+            <p>Practical learning facilities for science, experiments, and technology exposure.</p>
+          </div>
+          <div class="campus-feature">
+            <h4>Library &amp; Activity Rooms</h4>
+            <p>Reading, project learning, and creative spaces for every student's growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ADMISSION ======================== -->
+  <section class="admission-section" id="admission">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Admission Open</h2>
+        <p>Start your child's journey with a trusted and future-ready school.</p>
+      </div>
+      <div class="admission-box">
+        <div class="admission-text">
+          <h3>Enroll For The New Academic Year</h3>
+          <p>
+            Admissions are now open for students from primary to higher classes.
+            Join a school that supports learning, growth, discipline, and success.
+          </p>
+        </div>
+        <div class="admission-action">
+          <a href="#contact" class="hero-btn primary-btn">Contact Admission Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Contact Us</h2>
+        <p>We are here to help parents and students with any questions.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form-card">
+          <h3>Send Inquiry</h3>
+          <form id="contactForm">
+            <input type="text" id="inqName" placeholder="Your Full Name" />
+            <input type="email" id="inqEmail" placeholder="Your Email Address" />
+            <p class="email-hint" id="emailHint">Please enter a valid email address containing @</p>
+            <input type="text" id="inqSubject" placeholder="Subject" />
+            <textarea id="inqMessage" placeholder="Write your message"></textarea>
+            <button type="button" onclick="sendMessage()">Submit Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Green Valley School</h3>
+          <p>Creating confident learners and responsible future leaders.</p>
+        </div>
+
+        <div class="footer-info">
+          <h4>School Information</h4>
+          <p><strong>Address:</strong> Solapur, Maharashtra, India</p>
+          <p><strong>Phone:</strong> +91 88765 43210</p>
+          <p><strong>Email:</strong> info@greenvalleyschool.com</p>
+          <p><strong>Timings:</strong> Mon – Sat, 8:00 AM – 4:00 PM</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#campus">Campus</a></li>
+            <li><a href="#admission">Admission</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Green Valley School. All Rights Reserved.</p>
+        <p>Solapur, Maharashtra, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================== STUDENT MODAL ======================== -->
+  <div class="modal-overlay" id="studentModal">
+    <div class="modal-box">
+      <span class="close-modal" onclick="closeModal('studentModal')">&times;</span>
+      <h2>Student Login</h2>
+      <form>
+        <input type="text" placeholder="Enter Student ID" />
+        <input type="password" placeholder="Enter Password" />
+        <button type="button" class="student-submit-btn" onclick="studentLogin()">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ======================== STAFF MODAL ======================== -->
+  <div class="modal-overlay" id="staffModal">
+    <div class="modal-box">
+      <span class="close-modal" onclick="closeModal('staffModal')">&times;</span>
+      <h2>Staff Login</h2>
+      <form>
+        <input type="text" placeholder="Enter Staff Email or ID" />
+        <input type="password" placeholder="Enter Password" />
+        <button type="button" class="staff-submit-btn" onclick="staffLogin()">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ======================== FAQ CHATBOT FAB ======================== -->
+  <button class="chatbot-fab" onclick="toggleChatbot()" title="FAQ Chatbot">
+    <span class="chatbot-badge" id="chatBadge">1</span>
+    <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 6C4 4.895 4.895 4 6 4H22C23.105 4 24 4.895 24 6V18C24 19.105 23.105 20 22 20H16L10 24V20H6C4.895 20 4 19.105 4 18V6Z" fill="white" fill-opacity="0.9"/>
+      <circle cx="10" cy="12" r="1.5" fill="#1d4ed8"/>
+      <circle cx="14" cy="12" r="1.5" fill="#1d4ed8"/>
+      <circle cx="18" cy="12" r="1.5" fill="#1d4ed8"/>
+    </svg>
+  </button>
+
+  <!-- ======================== CHATBOT WINDOW ======================== -->
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      <div class="chatbot-avatar">🎓</div>
+      <div class="chatbot-header-info">
+        <h4>GVS Assistant</h4>
+        <p>Ask anything about our school</p>
+      </div>
+      <button class="chatbot-close-btn" onclick="toggleChatbot()">×</button>
+    </div>
+
+    <div class="chatbot-messages" id="chatMessages">
+      <div class="msg bot">Hi! 👋 Welcome to Green Valley School. I can answer your frequently asked questions. What would you like to know?</div>
+    </div>
+
+    <div class="chatbot-suggestions" id="chatSuggestions">
+      <span class="suggestion-chip" onclick="askQuestion('What are the school fees?')">💰 Fees</span>
+      <span class="suggestion-chip" onclick="askQuestion('How to apply for admission?')">📝 Admission</span>
+      <span class="suggestion-chip" onclick="askQuestion('What are school timings?')">🕗 Timings</span>
+      <span class="suggestion-chip" onclick="askQuestion('What facilities does the school have?')">🏫 Facilities</span>
+      <span class="suggestion-chip" onclick="askQuestion('Is transport available?')">🚌 Transport</span>
+      <span class="suggestion-chip" onclick="askQuestion('What is the teacher to student ratio?')">👩‍🏫 Staff</span>
+    </div>
+
+    <div class="chatbot-input-row">
+      <input type="text" id="chatInput" placeholder="Type your question..." onkeydown="if(event.key==='Enter') sendChat()" />
+      <button class="chatbot-send-btn" onclick="sendChat()">Send</button>
+    </div>
+  </div>
+
+  <!-- ======================== SCRIPT ======================== -->
+  <script src="script.js"></script>
+</body>
+</html>
